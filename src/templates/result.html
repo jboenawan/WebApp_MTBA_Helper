@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="animate.css/source/bouncing_entrances/bounceInLeft.css" media="screen" />
+    <style type="text/css">
+        div{
+        position:relative;
+        margin-right:auto;
+        margin-left:auto;
+        padding-top: 20px;
+        }
+
+        h3{
+        text-align: center;
+        font-family:Calibri;
+        margin-left:auto;
+        margin-right:auto;
+        color:#3A3A3A;
+        }
+
+        h3 {
+        font-size: 20pt;
+        }
+
+        p {
+        font-size: 15pt;
+		text-align: center;
+		font-family:Calibri;
+		margin-left:auto;
+		margin-right:auto;
+		color:black;
+        }
+		
+		h3#another {
+		border: solid 1px #B0B0B0;
+		}
+
+        a{
+        text-decoration: none;
+        color: black;
+        }
+		
+		a:hover{
+		text-decoration: underline;
+		color:#76246C
+		}
+
+
+        .descr {
+        color: #626262;
+        }
+
+        body{
+        background-color:white;
+        }
+		
+		h1 {
+		text-align: center;
+        font-family:Calibri;
+        margin-left:auto;
+        margin-right:auto;
+        color:#252525;
+		font-size:100px
+		}
+		
+
+    </style>
+
+
+</head>
+<body>
+<h1> MBTA Helper </h1>
+<div>
+<h3>
+    Nearest MBTA station:
+</h3>
+    <p class="descr">
+    {{stop}}
+        </p>
+    <br>
+<h3>
+    Distance:
+</h3>
+<p class="descr">
+    {{distance}} miles away <br>
+    from you.
+</p>
+<h3>
+    The next train is at
+</h3>
+<p class="descr">
+    {{first_time}} <br>
+</p>
+<hr width="70%">
+<h3 id="another"><a href="http://127.0.0.1:5000">Find another MBTA station near you</a>
+</h3>
+</div>
+
+
+</body>
+</html>

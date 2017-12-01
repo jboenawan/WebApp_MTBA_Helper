@@ -1,9 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Amazing app to help you find nearest MBTA station</title>
+    <meta charset="UTF-8">
+    <title>MBTA Helper</title>
+
+    <style type="text/css">
+        div{
+        position:relative;
+        margin-right:auto;
+        margin-left:auto;
+        padding-top: 50px;
+        }
+
+        h3,p{
+        text-align: center;
+        font-family:Calibri;
+        margin-left:auto;
+        margin-right:auto;
+        color:#252525;
+        }
+
+        h3 {
+        font-size: 20pt;
+        }
+
+        p {
+        font-size: 15pt;
+        }
+
+        .descr {
+        color: #757474;
+        }
+
+        #small {
+        font-size: 12pt;
+        }
+
+        body{
+        background-color:white;
+        }
+		
+		
+		input[type=text] {
+    	border: none;
+    	border-bottom: 1px solid #868686;
+		text-align: center;
+		}
+		
+
+		input:focus,
+		select:focus,
+		textarea:focus,
+		button:focus {
+    	outline: none;
+		}
+		
+		input[type=submit] {
+    	background-color: #8C8C8C;
+    	border: none;
+    	color: white;
+    	padding: 10px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	margin: 2px 2px;
+    	cursor: pointer;
+		border-radius: 2px;
+		}
+		.btn:hover {
+		background-color: #464646
+		}
+		.btn:active {
+  		background-color: #464646;
+  		box-shadow: 0 5px #666;
+  		transform: translateY(4px);
+		}
+		
+		h1 {
+		text-align: center;
+        font-family:Calibri;
+        margin-left:auto;
+        margin-right:auto;
+        color:#252525;
+		font-size:100px
+		}
+		
+	
+
+
+
+    </style>
+
 </head>
+
+
 <body>
+<h1> MBTA Helper </h1>
+<div>
+<h3>Find an MBTA Station Near You!</h3>
+<hr width="50%">
+<form method="POST" name="calculator">
+    <p>
+        Enter your location:
+    </p>
+    <p id="small">
+        e.g. "Prudential Tower"
+    </p>
+    <p>
+        <input type="text" name="place_name" autofocus>
+    </p>
+    <p>
+        <input type="submit" value="Submit" class="btn">
+    </p>
+</form>
+</div>
+
+
+
 
 </body>
 </html>
